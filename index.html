@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Advanced HTML5 Elements & Forms">
+        <title>Advanced HTML5 Elements & Forms</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ol type="i">
+                    <li><a href="#external-image">External Image</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#registration_form">Registration Form</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+
+            <!-- Below is the image of a busy city intersection. -->
+            <div id="external-image">
+                <h1>External Image</h1>
+                <p>Below is an external image of an aerial view of a busy city intersection.</p>
+                <img width="300px" height="500px" src="https://www.pexels.com/photo/black-and-white-aerial-view-of-busy-city-intersection-31096175/" alt="Aerial View of Busy City Intersection">
+            </div>
+
+            <!-- Below is a table containing 5 contacts. -->
+            <div id="table">
+                <table>
+                    <caption><h1>Contacts Table</h1></caption>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Address</th>
+                            <th>Mobile Phone Number</th>
+                            <th>Email Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Domunga</td>
+                            <td>123 Main Street, Busia, Uganda</td>
+                            <td>0773829940</td>
+                            <td>jd555@yahoo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>456 Dallas Street, Texas, USA</td>
+                            <td>555-987-6543</td>
+                            <td>JSmi98@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>James Ooko</td>
+                            <td>789 Lunga Street, Nairobi, Kenya</td>
+                            <td>0139485673</td>
+                            <td>JJoak@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Julia Kibet</td>
+                            <td>1010 Kapsabet Road, Eldoret, Kenya</td>
+                            <td>0723456789</td>
+                            <td>jkibeteld@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Josephine Mwende</td>
+                            <td>1212 Mombasa Road, Mombasa, Kenya</td>
+                            <td>0112345678</td>
+                            <td>JMwende@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <form method="post" id="registration_form">
+                <fieldset>
+                    <legend><h1>Registration Form</h1></legend>
+
+                    <!-- Below are input fields for name, email, password, and date. -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" maxlength="15" placeholder="Enter Your Password" required>
+                    <br>
+                    <label for="date">Date Of Birth:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br>
+
+                    <!-- Below is the implementation of dropdown, radio buttons, textarea and checkboxes. -->
+                    <label for="country">Select Country:</label>
+                    <select name="country" id="country" required>
+                        <option value="Kenya" selected>Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="USA">USA</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Burundi">Burundi</option>
+                    </select>
+
+                    <p>What is your current employment status?</p>
+                    <label for="employed">Employed</label>
+                    <input type="radio" id="employed" name="employment_status" value="employed" required>
+                    <label for="unemployed">Unemployed</label>
+                    <input type="radio" id="unemployed" name="employment_status" value="unemployed" required>
+                    <label for="student">Student</label>    
+                    <input type="radio" id="student" name="employment_status" value="student" required>
+                    <br>
+
+                    <p>Tell us about yourself:</p>
+                    <textarea name="about" id="about" cols="30" rows="10" placeholder="Write something about you" required></textarea>
+                    <br>
+
+                    <p>Which are your hobbies among these listed below:</p>
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="swimming">Swimming</label>
+                    <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+                    <label for="travelling">Travelling</label>
+                    <input type="checkbox" id="travelling" name="hobbies" value="travelling">
+                    <label for="cooking">Cooking</label>
+                    <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                    <label for="gardening">Playing Sports</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+                    <br>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2025 My Website</p>
+        </footer>
+</html>
